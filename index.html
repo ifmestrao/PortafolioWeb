@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Web</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    
+ <!-- Navegación -->
+ <div class="navbar">
+    <div class="logo">
+        <a href="#home">IFMESTRA</a>
+    </div>
+    <div class="menu-toggle">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+    <nav class="nav-menu">
+        <ul>
+            <li><a href="#home" class="nav-link active" data-section="home">Home</a></li>
+            <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+            <li><a href="#project" class="nav-link" data-section="project">Project</a></li>
+            <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
+            <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+        </ul>
+    </nav>
+</div>
+</header>
+
+<!-- Sección de inicio -->
+<section class="section hero active" id="home">
+    <div class="hero-content">
+        <div class="hero-text">
+            <h1 class="title">Frontend</h1>
+            <h1 class="title2">Developer</h1>
+            <p class="subtitle">Systems Engineer</p>
+            <p class="description">Software development, Data Analysis and TI Project Management Services.</p>           
+            <div class="tech-tags">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">Javascript</span>
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">Tailwind</span>
+            </div>
+            <div class="hero-buttons">
+                <a href="#project" class="hero-btn nav-link" data-section="project">
+                    Projects <span class="btn-icon">↗</span>
+                </a>
+                <a href="#contact" class="hero-btn btn-secondary nav-link" data-section="contact">
+                    Contact <span class="btn-icon">✉</span>
+                </a>
+            </div>
+            <div class="social-links">
+                <a href="https://github.com/ifmestrao" class="social-link" aria-label="GitHub">
+                    <img src="Logos/github.png" alt="GitHub">
+                </a>
+                <a href="https://www.linkedin.com/in/isaac-mestra-670690279/" class="social-link" aria-label="LinkedIn">
+                    <img src="Icons/social.png" alt="LinkedIn">
+                </a>
+                <a href="https://www.instagram.com/ifmestrao_7/" class="social-link" aria-label="Instagram">
+                    <img src="Icons/logotipo-de-instagram.png" alt="Instagram">
+                </a>
+            </div>
+        </div>
+        
+        <div class="hero-image">
+            <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+            <dotlottie-player 
+                src="https://lottie.host/d621b219-c1cd-46f1-a44e-f0b8ff48b2fb/gZilVyb9Qy.lottie" 
+                background="transparent" 
+                speed="1" 
+                style="width: 310px; height: 310px" 
+                loop 
+                autoplay>
+            </dotlottie-player>
+        </div>
+    
+    </div>
+</section>
+
+<!-- Sección About -->
+<section class="section about" id="about">
+    <h2>About Me</h2>
+    <div class="about-content">
+        <div class="about-text">
+            <h1>
+                <span class="greeting">Hello, I'm</span>
+                <span class="name">Isacc Mestra</span>
+            </h1>
+            <p class="description">
+                I consider myself a kind, responsible, collaborative 
+                person, among other virtues I have, and I am capable
+                of facing any difficulty that may arise.
+            </p>
+            <div class="about-buttons">
+                <a href="#" class="btn btn-primary">
+                    <span class="icon">📄</span>
+                    Descargar CV
+                </a>
+                <a href="#project" class="btn btn-secondary nav-link" data-section="project">
+                    <span class="icon">&lt;/&gt;</span>
+                    Ver proyectos
+                </a>
+            </div>
+            <div class="about-image">
+                <img src="IsaccMestra.jpg" alt="Isaac Mestra" />
+            </div>
+        </div>
+    </div>    
+</section>
+
+                
+<!-- Sección de proyectos -->
+<section class="section project" id="project">
+    <h1>Projects</h1>
+    <div class="projects-grid">
+        <div class="project-card">
+            <img src="proyects/Arbol Binario.png" alt="Arbol Binario" class="project-image">
+            <div class="project-content">
+                <h3 class="project-title">Arbol Binario</h3>
+                <p class="project-description">Binary tree with a data structure that is composed of a set of nodes, a root node, and two subtrees...</p>
+                <div class="project-buttons">
+                    <a href="#" class="project-btn live-demo">Live Demo ↗</a>
+                    <a href="#" class="project-btn details">Details →</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <img src="proyects/Calculator.png" alt="Calculator" class="project-image">
+            <div class="project-content">
+                <h3 class="project-title">Calculator</h3>
+                <p class="project-description">Calculator designed with react, with basic and advanced mathematical functions...</p>
+                <div class="project-buttons">
+                    <a href="https://calulator-psi.vercel.app/" class="project-btn live-demo">Live Demo ↗</a>
+                    <a href="https://github.com/ifmestrao/Calculadora.git" class="project-btn details">Details →</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <img src="https://example.com/buku-catatan.jpg" alt="Buku Catatan" class="project-image">
+            <div class="project-content">
+                <h3 class="project-title">Buku Catatan</h3>
+                <p class="project-description">Buku Catatan adalah website yang memungkinkan pengguna untuk membuat, menyimpan, dan mengelola catatan secara...</p>
+                <div class="project-buttons">
+                    <a href="#" class="project-btn live-demo">Live Demo ↗</a>
+                    <a href="#" class="project-btn details">Details →</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <img src="https://example.com/growtopia-calculator.jpg" alt="Growtopia-Calculator" class="project-image">
+            <div class="project-content">
+                <h3 class="project-title">Growtopia-Calculator</h3>
+                <p class="project-description">Growtopia Surgery Shop Calculator membantu pemain Growtopia menghitung keuntungan dari penjualan tools di...</p>
+                <div class="project-buttons">
+                    <a href="#" class="project-btn live-demo">Live Demo ↗</a>
+                    <a href="#" class="project-btn details">Details →</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <img src="https://example.com/it-support.jpg" alt="IT Support Bekasi" class="project-image">
+            <div class="project-content">
+                <h3 class="project-title">IT Support Bekasi</h3>
+                <p class="project-description">Website IT Support Bekasi adalah proyek yang saya buat atas permintaan guru di sekolah, untuk menyediakan layanan IT di...</p>
+                <div class="project-buttons">
+                    <a href="#" class="project-btn live-demo">Live Demo ↗</a>
+                    <a href="#" class="project-btn details">Details →</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <img src="https://example.com/portfolio-v4.jpg" alt="Portofolio-V4" class="project-image">
+            <div class="project-content">
+                <h3 class="project-title">Portofolio-V4</h3>
+                <p class="project-description">Website Portofolio-v4 adalah versi sebelumnya dari website ini yang berisi informasi mengenai berbagai proyek yang telah...</p>
+                <div class="project-buttons">
+                    <a href="#" class="project-btn live-demo">Live Demo ↗</a>
+                    <a href="#" class="project-btn details">Details →</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Sección Skills -->
+<section class="section skills" id="skills">
+    <h2>My Skills</h2>
+    
+    <div class="skills-category">
+        <h3>Programming Languages & Tools</h3> <!-- Título combinado -->
+        <div class="skills-grid">
+            <!-- Lenguajes de Programación -->
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <img src="Logos/html-5 (1).png" alt="HTML">
+                </div>
+                <p class="skill-name">HTML</p>
+            </div>
+            
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <img src="Logos/css-3 (1).png" alt="CSS">
+                </div>
+                <p class="skill-name">CSS</p>
+            </div>
+            
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <img src="Logos/js.png" alt="JavaScript">
+                </div>
+                <p class="skill-name">JavaScript</p>
+            </div>
+            
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <img src="Logos/icons8-c-sharp-logotipo-64.png" alt="C#">
+                </div>
+                <p class="skill-name">C#</p>
+            </div>
+            
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <img src="Logos/java.png" alt="Java">
+                </div>
+                <p class="skill-name">Java</p>
+            </div>
+            
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <img src="Logos/php.png" alt="PHP">
+                </div>
+                <p class="skill-name">PHP</p>
+            </div>
+            
+            <!-- Tecnologías y Herramientas -->
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <img src="Logos/atom.png" alt="React">
+                </div>
+                <p class="skill-name">ReactJS</p>
+            </div>
+            
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <img src="Logos/mysql.png" alt="SQL">
+                </div>
+                <p class="skill-name">SQL</p>
+            </div>
+            
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <img src="Logos/jira.png" alt="Jira">
+                </div>
+                <p class="skill-name">Jira</p>
+            </div>
+            
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <img src="Logos/figma.png" alt="Figma">
+                </div>
+                <p class="skill-name">Figma</p>
+            </div>
+            
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <img src="Logos/vs code.png" alt="VS Code">
+                </div>
+                <p class="skill-name">VS Code</p>
+            </div>
+            
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <img src="Logos/icons8-net-framework-48.png" alt=".NET">
+                </div>
+                <p class="skill-name">.NET</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contacts -->
+<section class="section contact" id="contact">
+    <h2>Contacts</h2>
+    
+    <div class="contact-container">
+        <p class="contact-description">Send me a message and let's talk.</p>      
+        <form action="https://formspree.io/f/mldgeedv" method="POST">
+            <div class="form-group">
+                <input type="text" id="nombre" name="nombre" placeholder="Name" required>
+            </div>
+            <div class="form-group">
+                <input type="email" id="email" name="email" placeholder="Email" required>
+            </div>
+            <div class="form-group">
+                <textarea id="mensaje" name="mensaje" placeholder="Message" required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">
+                <span class="icon">📨</span>
+                Send Message
+            </button>
+        </form>                
+        <div class="social-section">
+            <h3>Connect with me</h3>
+            <div class="social-container">
+                <a href="https://www.linkedin.com/in/isaac-mestra-670690279/" class="social-card">
+                    <img src="Icons/linkedin.png" alt="LinkedIn">
+                    <span>Let's connect</span>
+                </a>
+                <div class="social-grid">
+                    <a href="https://www.instagram.com/ifmestrao_7/" class="social-item">
+                        <img src="Icons/instagram.png" alt="Instagram">
+                        <span>@Ifmestra</span>
+                    </a>
+                    <a href="https://www.facebook.com/profile.php?id=100080899620906" class="social-item">
+                        <img src="Icons/facebook.png" alt="FaceBook">
+                        <span>@Ifmestra</span>
+                    </a>
+                    <a href="https://github.com/ifmestrao" class="social-item">
+                        <img src="Logos/github.png" alt="GitHub">
+                        <span>@Ifmestra</span>
+                    </a>
+                    <a href="https://www.tiktok.com/@ifmestrao_" class="social-item">
+                        <img src="Icons/tik-tok.png" alt="TikTok">
+                        <span>@Ifmestra</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <script src="javaScript.js"></script>
+</body>
+</html>
